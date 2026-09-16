@@ -637,7 +637,6 @@ def test_whitespace_stripped_count_ignores_missing_values() -> None:
     assert entry.effect["per_column"]["c"]["stripped"] == 2
 
 
-
 def test_numeric_strings_are_parsed() -> None:
     gen = np.random.default_rng(15)
     frame = pd.DataFrame({"n": [f"{v:.2f}" for v in gen.normal(50, 10, 200)]})
